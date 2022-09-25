@@ -1,0 +1,7 @@
+{
+  "short_name": "Restaurant App",
+  "name": "Restaurant App",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone"
+}

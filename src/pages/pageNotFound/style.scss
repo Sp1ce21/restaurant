@@ -1,0 +1,25 @@
+.noPage {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(90deg, #c15cff, #ff5454);
+  animation: alternate infinite gradientAnim 5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 100px;
+    color: white;
+  }
+}
+
+@keyframes gradientAnim {
+  0% {
+    background-size: 200% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}

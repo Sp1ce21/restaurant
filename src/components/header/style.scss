@@ -1,0 +1,87 @@
+.header {
+  border-top: 2px solid var(--red);
+  border-bottom: 3px solid var(--red);
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__left,
+  &__right {
+    font-weight: 700;
+    font-size: 40px;
+    flex: 0 0 228px;
+    background: var(--gradient);
+    background-clip: text;
+    color: transparent;
+    background-size: 200%;
+    animation: bg-animation 3s infinite alternate;
+  }
+
+  &__right {
+  }
+
+  &__nav {
+    align-self: flex-end;
+    padding-bottom: 13px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__point {
+    a {
+      padding: 8px 12px;
+      background-color: var(--red);
+      border-radius: 10px;
+      font-size: 17px;
+      color: var(--white);
+      font-weight: 500;
+      border: 2px solid transparent;
+      transition: ease-in 0.2s;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--white);
+        color: var(--red);
+        border: 2px solid var(--red);
+        transition: ease-out 0.2s;
+      }
+    }
+
+    a.active {
+      border-bottom: none;
+      border-radius: 10px 10px 0 0;
+      position: relative;
+      background-color: var(--white);
+      color: var(--red);
+      border: 2px solid var(--red);
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -8px;
+        left: -2px;
+        width: 100%;
+        height: 18px;
+        background-color: var(--white);
+        border-left: 2px solid var(--red);
+        border-right: 2px solid var(--red);
+      }
+    }
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}

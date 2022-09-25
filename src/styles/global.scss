@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  text-transform: none;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: OpenSans;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container__1200 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
