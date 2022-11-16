@@ -14,9 +14,6 @@ const Header = () => {
                 <NavLink to="/serve/table">Book Table</NavLink>
               </li>
               <li className="header__point">
-                <NavLink to="/serve/menu">Menu</NavLink>
-              </li>
-              <li className="header__point">
                 <NavLink to="/serve/contacts">Contact Us</NavLink>
               </li>
             </ul>

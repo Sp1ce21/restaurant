@@ -1,8 +1,8 @@
 import { combineReducers, createStore } from "redux";
-// import TemplatesReducer from "./templates-reducer";
+import modalReducer from "./reducers/modal-reducer";
 
 const rootReducer = combineReducers({
-  // templates: TemplatesReducer,
+  modal: modalReducer,
 });
 
 type rootReducerType = typeof rootReducer;

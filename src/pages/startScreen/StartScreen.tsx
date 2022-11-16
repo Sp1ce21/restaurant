@@ -9,7 +9,7 @@ const StartScreen: FC = () => {
       <div className="start__column">
         <div className="start__title">Restaurant App</div>
         <button
-          onClick={() => navigate("/serve/message")}
+          onClick={() => navigate("/serve/table")}
           className="start__button"
           data-back="Start"
           data-front="Hover me"

@@ -1,0 +1,20 @@
+.contacts {
+  &__wrapper {
+  }
+
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 32px;
+    color: var(--primary);
+  }
+
+  &__block {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
