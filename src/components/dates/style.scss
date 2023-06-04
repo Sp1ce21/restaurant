@@ -1,0 +1,40 @@
+.dates {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transform: scale(1.2);
+
+    svg {
+      width: 20px;
+      height: 20px;
+      display: flex;
+
+      path {
+        fill: var(--red);
+        transition: ease 0.3s;
+      }
+    }
+
+    button:disabled {
+      path {
+        fill: var(--white);
+      }
+    }
+  }
+
+  &__left {
+    transform: rotate(180deg);
+  }
+
+  &__center {
+    background-color: var(--red);
+    color: var(--white);
+    height: 20px;
+    font-size: 14px;
+    padding: 0 10px;
+    border-radius: 8px;
+    min-width: 80px;
+  }
+}

@@ -1,0 +1,12 @@
+.select {
+  width: 80px;
+  height: 24px;
+  border: 2px solid var(--red);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: OpenSans;
+
+  option:hover {
+    background-color: var(--red);
+  }
+}
