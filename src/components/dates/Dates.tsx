@@ -15,12 +15,12 @@ const Dates = ({ dates, onChange, currentDay }: IDates) => {
   const onNext = useCallback(() => {
     setCurrentDateIndex((prev) => prev + 1);
     onChange(dates[currentDateIndex + 1]?.day);
-  }, [currentDateIndex, dates]);
+  }, [currentDateIndex, dates, onChange]);
 
   const onPrev = useCallback(() => {
     setCurrentDateIndex((prev) => prev - 1);
     onChange(dates[currentDateIndex - 1]?.day);
-  }, [currentDateIndex, dates]);
+  }, [currentDateIndex, dates, onChange]);
 
   return (
     <div className="dates__wrapper">
