@@ -3,7 +3,6 @@ import RedirectTo from "./components/redirect/RedirectTo";
 import PageNotFound from "./pages/pageNotFound/PageNotFound";
 import StartScreen from "./pages/startScreen/StartScreen";
 import Table from "./pages/table/Table";
-// import Contacts from "./pages/contacts/Contacts";
 import Order from "./pages/order/Order";
 
 const App = () => {
@@ -13,7 +12,6 @@ const App = () => {
         <Route path="/serve" element={<RedirectTo link="/serve/message" />} />
         <Route path="/serve/table" element={<Table />} />
         <Route path="/serve/table/:day/:hour/:id" element={<Order />} />
-        {/* <Route path="/serve/contacts" element={<Contacts />} /> */}
         <Route path="/" element={<StartScreen />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
